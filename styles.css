@@ -1,0 +1,72 @@
+// Variables para colores y estilos básicos
+$bg-color: #f9f9f9;
+$text-color: #333;
+$button-color: #4CAF50;
+$button-hover: #45a049;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    text-align: center;
+    color: $text-color;
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    input {
+      width: 45%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    button {
+      flex: 1;
+      margin: 0 5px;
+      padding: 10px;
+      background-color: $button-color;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $button-hover;
+      }
+    }
+  }
+
+  .result {
+    text-align: center;
+    font-size: 18px;
+    color: $text-color;
+  }
+}
