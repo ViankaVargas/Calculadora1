@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Simple</title>
+  <!-- Enlazamos el archivo de estilos compilado (styles.css) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Contenedor principal de la calculadora -->
+  <div class="calculator">
+    <h1>Calculadora Simple</h1>
+    
+    <!-- Sección de entradas para los números -->
+    <div class="inputs">
+      <input type="number" id="number1" placeholder="Número 1">
+      <input type="number" id="number2" placeholder="Número 2">
+    </div>
+    
+    <!-- Botones para seleccionar la operación -->
+    <div class="buttons">
+      <button data-operation="add">+</button>
+      <button data-operation="subtract">-</button>
+      <button data-operation="multiply">*</button>
+      <button data-operation="divide">/</button>
+    </div>
+    
+    <!-- Área para mostrar el resultado -->
+    <div class="result">
+      <p>Resultado: <span id="result-value">0</span></p>
+    </div>
+  </div>
+
+  <!-- Enlazamos el archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
